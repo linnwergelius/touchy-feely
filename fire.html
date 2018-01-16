@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    
+<head>
+    <title>TOUCHY FEELY</title>
+    
+    <style>
+        BODY{
+cursor:url("curos.png"), default;
+}
+        body, html {
+            width:100%;
+            margin:0;
+            padding:0;
+            background-color:black;
+        }
+        div {
+            width:100%;
+            min-height:900px;
+            padding:0;
+            margin:50%;
+            position:relative;
+            padding:0;
+            margin:0;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        
+        #eartha {
+            background-image: url("eartha.png");
+
+        }
+         #spf {
+            background-image: url("spf.jpg");
+            background-position:center;
+            
+        }
+          #svett {
+            background-image: url("svett.png");
+            background-position:center;
+        }
+          #ear {
+            background-image: url("ear.jpg");
+            background-position:center;
+        }
+        ::-webkit-scrollbar { 
+    display: none; 
+}
+
+div {
+    opacity:0;
+      -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+    
+}
+    div:hover {
+    
+    opacity: 1;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+
+#button {
+    width:100px;
+    height:50px;
+    text-align:center;
+    color:white;
+    border:3px solid white;
+    font-family:arial;
+    margin-left:200px;
+    margin-top:400px;
+    min-height:50px;
+  
+    z-index:100;
+    position:fixed;
+    opacity:1;
+}
+    
+    </style>
+</head>
+<body>
+    
+    <a href="secondpoke.html"><div id="button">
+            <p>TSSS</p>
+        </div></a>
+    
+     <div id="ear">
+    </div>
+    <div id="eartha">
+    </div>
+    
+    <div id="spf">
+    </div>
+    
+    <div id="svett">
+        <div id="button">
+            <p>TSSS</p>
+        </div>
+    </div>
+    
+   
+  
+    <!---<img src="eartha.jpg">
+    <img src="spf.jpg">
+    <img src="svett.jpg">
+    <img src="ear.jpg">-->
+    
+    <audio autoplay loop>
+        <source src="fire.wav" type="audio/wav">
+    </audio>
+    
+</body>

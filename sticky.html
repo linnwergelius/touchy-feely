@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>TOUCHY FEELY</Title>
+    <link rel="stylesheet" href="sticky.css">
+        <link rel="stylesheet" href="animate.css">
+<style>
+    body{
+     cursor:url("lol.png"), default;}
+</style>
+</head>
+
+<body class="randomcolor">
+    <img src="paint.png" id="bucket" value="Refresh Page" onClick="window.location.reload()" class="animated shake infinite">
+        <img src="paint2.png" id="bucket2" value="Refresh Page" onClick="window.location.reload()" class="animated shake infinite">
+
+
+<div id="videoslime"onclick="playAudio1()">
+    <video autoplay loop class="slime">
+        <source src="slime.mp4" type="video/mp4"> 
+    </video>
+           <video autoplay loop class="slime">
+        <source src="slime.mp4" type="video/mp4">
+    </video>
+              <video autoplay loop class="slime">
+        <source src="slime.mp4" type="video/mp4">
+    </video>
+</div>
+
+   <img src="gum.gif" id="gum" >
+   
+    <img src="bil.jpg" id="bil" class="animated rubberBand "onclick="playAudio2()">
+    <img src="insides.jpg" id="ew" class="animated rubberBand" onclick="playAudio()">
+        <img src="mess.jpg" id="mess"class="animated rubberBand draggable" onclick="playAudio3()" >
+
+
+    <div id="tubbywall">
+       <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+        <video autoplay loop class="custard" >
+    </video>
+ <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+ <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+ 
+    <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+        <video autoplay loop class="custard" >
+    </video>
+ <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+ <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+ 
+  <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+        <video autoplay loop class="custard" >
+    </video>
+ <video autoplay loop class="custard" id="stretch">
+        <source src="tubby.mp4" type="video/mp4">
+    </video>
+ <video autoplay loop class="custard">
+        <source src="tubby.mp4" type="video/mp4">
+    </video> 
+    </div>
+    
+    
+    <audio  autoplay>
+     <source src="pasta.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="mouth">
+     <source src="mouthsounds.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="slimey">
+     <source src="slimey.wav" type="audio/wav">
+    </audio>
+         
+    <audio id="smack">
+     <source src="smack.wav" type="audio/wav">
+    </audio>
+         
+         
+   <audio id="banana">
+     <source src="banan.wav" type="audio/wav">
+    </audio>
+     
+    <a href="cooper2.html"> <div id="button-bottom"class="button">
+        <p>SMACK!</p>
+    </div> </a>
+     
+     <script>
+var x = document.getElementById("slimey"); 
+
+function playAudio() { 
+    x.play(); 
+}
+
+var x = document.getElementById("banana"); 
+
+function playAudio1() { 
+    x.play(); 
+}
+
+var x = document.getElementById("mouth"); 
+
+function playAudio2() { 
+    x.play(); 
+}
+
+var x = document.getElementById("smack"); 
+
+function playAudio3() { 
+    x.play(); 
+} 
+  
+  </script>    
+   
+     
+    <script type="text/javascript">
+
+/***********************************************
+* Random Content Colors script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//specify list of random background colors to apply to CSS class "randomcolor"
+//For each entry, you can optionally specify a text and link color via the syntax:
+// "BackgroundColor:TextColor" OR "BackgroundColor:TextColor:LinkColor"
+var randombgcolors=[ "#72ff00", "#f6ff00", "#00fff6", "#ff8300", "#dd07f9"]
+
+var rbcssrule=""
+var randomnum=Math.floor(Math.random()*randombgcolors.length)
+if (randombgcolors[randomnum].indexOf(":")!=-1){
+rbcssrule="background-color: "+randombgcolors[randomnum].split(":")[0]+";"
+rbcssrule+="color: "+randombgcolors[randomnum].split(":")[1]+";"
+}
+else
+rbcssrule="background-color: "+randombgcolors[randomnum]+";"
+
+document.write('<style type="text/css">\n')
+document.write('.randomcolor{'+rbcssrule+'}\n')
+if (randombgcolors[randomnum].split(":").length==3) //if link color specified
+document.write('.randomcolor a{color:'+randombgcolors[randomnum].split(":")[2]+';}\n')
+document.write('<\/style>')
+
+</script>
+</body>
+

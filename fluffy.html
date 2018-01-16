@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+ <title>TOUCHY FEELY</title>
+ <link rel="stylesheet" href="fluffy.css">
+<link href="hover.css" rel="stylesheet" media="all">
+
+ <link rel="stylesheet"
+  href="animate.css">
+ <style>
+  a{
+   
+    text-decoration: none;
+}
+  
+ </style>
+
+<link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+
+</head>
+
+<body>
+ <div class="frame">
+  <img src="fluffy/form1.png" id="form1"class="blob">
+  <img src="fluffy/form3.png" id="form3"class="blob">
+  <img src="fluffy/form4.png" id="form4"class="blob">
+  <img src="fluffy/form5.png" id="form5"class="blob">
+  <img src="fluffy/form6.png" id="form6"class="blob">
+  <img src="fluffy/form7.png" id="form7"class="blob">
+  <img src="fluffy/form8.png" id="form8"class="blob">
+  <img src="fluffy/form9.png" id="form9"class="blob">
+  <img src="fluffy/form10.png" id="form10"class="blob">
+  <img src="fluffy/form11.png" id="form11"class="blob">
+</div>
+ <div>
+ <p id="title" >↓FEEL AROUND↓</p>
+ </div>
+ 
+<div class="scroller">
+<video id="hundklapp" width="900" height="auto" loop autoplay onmouseover="playThirdSound()" onmouseout="stopThirdSound()">
+    <source src="fluffy/video.mp4" type="video/mp4">
+ </video>
+
+ <audio id="brush">
+  <source src="fluffy/brush.wav" type="audio/wav">
+ </audio>
+ 
+ <img src="fluffy/fluffy.jpg" id="elmo" width="900px" onmouseover="playFirstSound()" onmouseout="stopFirstSound()">
+
+<audio id="katt">
+ <source src="fluffy/kattpurr.mp3" type="audio/mp3" n>
+</audio>
+
+ <img src="fluffy/humla.gif" id="humla1"onmouseover="playFourthSound()" onmouseout="stopFourthSound()">
+ 
+  <audio id="ooo">
+  <source src="fluffy/ooo.ogg" type="audio/ogg">
+ </audio>
+ 
+ <img src="fluffy/sheep.jpg"id="sheep" width="900px"onmouseover="playSecondSound()" onmouseout="stopSecondSound()">
+
+ <audio id="hair">
+  <source src="fluffy/hair.wav" type="audio/wav">
+ </audio>
+ 
+ <video id="popcorn" width="900" height="auto" loop autoplay muted onmouseover="boop()">
+    <source src="fluffy/popcorn.mp4" type="video/mp4">
+ </video>
+ 
+  <audio id="smoke">
+  <source src="fluffy/poof.wav" type="audio/wav" >
+ </audio>
+  
+ <a href="firstpoke.html"><p>MOVIN' ON!</p></a>
+  </div>
+
+
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+ window.sr = ScrollReveal();
+sr.reveal('#hundklapp');
+sr.reveal('#elmo');
+sr.reveal('#humla1');
+sr.reveal('#sheep');
+sr.reveal('#popcorn');
+</script>
+
+<script>
+  function playFirstSound(){
+       var audio = document.getElementById("katt");
+       audio.play();
+                 }
+                 
+   function stopFirstSound(){
+       var audio = document.getElementById("katt");
+       audio.pause();
+                 }
+      function playSecondSound(){
+       var audio = document.getElementById("hair");
+       audio.play();
+                 }
+                 
+   function stopSecondSound(){
+       var audio = document.getElementById("hair");
+       audio.pause();
+                 }
+                 
+           function playThirdSound(){
+       var audio = document.getElementById("brush");
+       audio.play();
+                 }
+                 
+   function stopThirdSound(){
+       var audio = document.getElementById("brush");
+       audio.pause();
+                 }
+         function playFourthSound(){
+       var audio = document.getElementById("ooo");
+       audio.play();
+                 }
+                 
+   function stopFourthSound(){
+       var audio = document.getElementById("ooo");
+       audio.pause();
+                 }               
+   
+   function boop(){
+       var audio = document.getElementById("smoke");
+       audio.play();
+                 }
+                 
+   
+ 
+   </script>
+
+</body>

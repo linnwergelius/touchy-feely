@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    
+    <head>
+        <title>TOUCHY FEELY</title>
+        <link rel="stylesheet" href="wet.css">
+        <script type="text/javascript" src="dom-drag.js"></script>
+              <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+      
+      
+      <img src="sea.png" id="bg">
+      
+      <img src="starten.png" id="start" draggable="false">
+
+        <video autoplay loop id="pearl">
+            <source src="pearl.mp4" type="video/mp4">
+        </video>
+        
+        <img src="toalett.jpg" id="toa"style="position: relative">
+        
+        <img src="vintagedamm.jpg" id="damm"style="position: relative">
+  
+    
+   <img src="blobbyx.png" id="blobby">
+    <div id="videocontain">
+        <video class="underwater"id="underwater1" autoplay loop muted style="position: relative">
+            <source src="underwater.mp4" type="video/mp4" width="300px" >
+        </video>
+         <video class="underwater"autoplay loop muted width="300px" id="second" style="position: relative">
+            <source src="underwater.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+   
+         <img src="mun.jpg" id="mun" style="position: relative">
+         <img src="still.png" id="still">
+       
+        <img src="suit.jpg" id="suit"style="position: relative">
+       
+        <a href="sticky.html"><div class="button">
+         <p>DRIP</p>
+        </div>
+        </a>
+       
+       <a href="cooper.html"><div class="button">
+         <p>DROP</p>
+        </div></a> 
+     
+        <audio>
+            <source src="rain.wav" type="audio/wav">
+        </audio>
+        
+        <audio autoplay loop>
+            <source src="underwater.mp3" type="audio/wav">
+        </audio>
+        
+        <script>
+            Drag.init(document.getElementById("toa"));
+            
+            Drag.init(document.getElementById("suit"));
+            
+            Drag.init(document.getElementById("underwater1"));
+            
+            Drag.init(document.getElementById("mun"));
+            
+            Drag.init(document.getElementById("damm"));
+        
+
+         </script>
+       
+    </body>

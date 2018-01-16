@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TOUCHY FEELY</title>
+     <link rel="stylesheet" href="animate.css">
+    <style>
+body {
+    background-color:black;
+}
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border-radius:50px;
+   }
+   
+   .circle {
+      border-radius:50%;
+      width:70px;
+      height:70px;
+      background-color:white;
+      position:fixed;
+      border:5px solid black;
+      left:556px;
+      top:322px;
+   }
+      #second {
+  
+      top:385px;
+   }
+   
+   #top {
+      top:264px;
+   }
+   
+   .circle:active {
+      background-color:black;
+   }
+  
+    </style>
+</head>
+<body>
+    
+     <a href="cool.html"><video id="poke">
+        <source src="pokefinal.mp4" type="video/mp4">
+    </video></a>
+    </div>
+            <div class="circle animated bounce"id="top"onclick="playPause()"class="animated bounce">
+    </div>
+    <div class="circle animated bounce"onclick="playPause()"class="animated bounce">
+    </div>
+    
+       <div class="circle animated bounce"id="second"onclick="playPause()">
+   
+
+<script>
+    var myVideo = document.getElementById("poke"); 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+</script>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    
+    <head>
+        <title>TOUCHY FEELY</title>
+        <link href="coarse.css" rel="stylesheet"
+    </head>
+    
+    <body>
+        <div class="wrapper">
+        <img src="3.jpg" id="sten" onmouseover="playAudio()" onmouseout="stop()">
+        <img src="koral.jpg" id="koral"onmouseover="playAudio()";onmouseout="stop()">
+        <img src="supergross.jpg" id="acne"onmouseover="playAudio()"onmouseout="stop()">
+        <img src="braces.jpg" id="braces"onmouseover="playAudio()"onmouseout="stop()">
+        <img src="stenbil.jpg" id="bil"onmouseover="playAudio()"onmouseout="stop()">
+        </div>
+        
+        <a href="mjuk.html">
+        <div class="button">
+            <p>XRZKV</p>
+        </div>
+        </a>
+        
+        <a href="mjuk.html">
+         <div class="button">
+            <p>QFTYZ</p>
+        </div>
+        </a>
+        
+        <audio id="glitch"autoplay>
+            <source src="glitch.wav" type="audio/wav" >
+        </audio>
+        
+        <script>
+  var x = document.getElementById("glitch"); 
+
+function playAudio() { 
+    x.play(); 
+}
+
+function stop() { 
+    x.pause(); 
+} 
+    
+        </script>
+    </body>

@@ -1,0 +1,35 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width:100%;
+  background-color: black;
+}
+html {
+  width:100%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.word {
+  margin: auto;
+  color: white;
+  font-family: 'helvetica';sans-serif;
+  font-size:100px;
+  text-transform:lowercase;
+  font-weight:100;
+  font-style:italic;
+  display:block;
+}
+
+img {
+    position:absolute;
+     display: block;
+     width:900px;
+     height:auto;
+    left:50%;
+   margin-left: -450px; /* Half the width */
+   margin-top:100px;
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+ <title>TOUCHY FEELY</title>
+
+ <style>
+
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+   }
+
+#button-top {
+        background: white;
+        color:black;
+        border:3px solid;
+        font-family: "arial";
+        font-weight:500;
+        font-size: 18pt;
+        letter-spacing:4pt;
+        text-align:center;
+        padding-left: 25px;
+        padding-right: 25px;
+        position:fixed;
+        bottom:70%;
+        left:43%;
+        
+
+        
+   }
+
+#button-bottom {
+        background: white;
+        color:black;
+        border:3px solid;
+        font-family: "arial";
+        font-weight:500;
+        font-size: 18pt;
+        letter-spacing:4pt;
+        text-align:center;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+        position:fixed;
+        top:auto;
+        bottom:20%;
+        left:43%;
+        
+
+        
+   }
+   img{
+    width:70%;
+    display:block;
+margin:auto;
+position:relative;
+top:20em;
+
+opacity:0;
+   
+}
+
+img:hover{
+ opacity:1;
+}
+
+/*.title:-webkit-full-screen {
+   width:100%;
+}
+
+.title:fullscreen {
+  width:100%;
+}*/
+
+
+ </style>
+</head>
+
+<body>
+    
+ <video playsinline autoplay muted loop id="hud">
+    <source src="media/titlesans.mp4" type="video/mp4">
+ </video>
+ 
+
+
+ <a href="cool.html">
+    <div id="button-top">
+    <p>THAT</p>
+    </div>
+ </a>
+ 
+ <img src="media/lalalal.gif" class="title2">
+ 
+ <a href="tingel.html">
+    <div id="button-bottom"class="button">
+        <p>THIS</p>
+    </div>
+ </a>
+ 
+ 
+</body>

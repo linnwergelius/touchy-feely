@@ -1,0 +1,45 @@
+body {
+    background-image:url("bed.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    margin:0;;
+    padding:0;
+    
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.fadein { position:relative; height:800px; width:800px;left:10%;margin-top:auto;margin-bottom:10px;}
+.fadein img { position:absolute; left:10%; top:10%; transition:opacity 1s; opacity:1; max-width:800px; max-height:500px;outline: 1px white;}
+.fadein img.is-hidden { opacity:0; }
+
+#peach {
+    float:left;
+}
+
+video {
+    position:absolute;
+    top:80px;
+   
+    left:57%;
+  
+
+    opacity:0.7;
+    
+}
+
+#songtitle {
+    position:fixed;
+    z-index:10;
+}
+
+#glass {
+    width:20%;
+    margin-left:70%;
+    position:fixed;
+    bottom:0px;
+    opacity:0.7;
+    
+}

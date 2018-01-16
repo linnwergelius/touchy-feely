@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+   <title>TOUCHY FEELY</title>
+
+ <link rel="stylesheet" href="soft.css">
+  <link rel="stylesheet" href="hover.css">
+
+</head>
+
+<body>
+    
+    <img src="song.gif" height="100px"id="songtitle">
+
+<div class="fadein">
+    
+    <img src="bed.jpg" id="bed">
+    <div></div>
+   <img src="seahorse.jpg" id="sea">
+       <div></div>
+
+    <img src="blow.jpg"id="blow">
+        <div></div>
+
+    <img src="hud.jpg" id="hud">
+        <div></div>
+
+    <img src="fragile.jpg"id="peach">
+        <div></div>
+
+     <img src="sleep.jpg"id="sleep">
+    
+</div>
+ 
+<a href="hands.html"> <img src="glass.png" id="glass"class="hvr-pulse" onmouseover="playSound()"></a>
+ 
+<video autoplay loop width="500px">
+    <source src="titlesans.mp4" type="video/mp4">
+</video>
+    <audio autoplay>
+        <source src="background.mp3" type="audio/mp3">
+    
+    </audio>
+       <audio id="windows">
+        <source src="win95.mp3" type="audio/mp3">
+    </audio>
+       
+   <script>
+  var root = document.querySelector('.fadein');
+  var els = root.querySelectorAll(':not(:first-child)');
+  for (i=0; i < els.length; i++) {
+    els[i].classList.add('is-hidden');
+  }
+  root.addEventListener('transitionend', function(){
+    root.insertBefore(root.querySelector(':first-child.is-hidden'), null);
+  });
+  setInterval(function(){
+    root.querySelector(':first-child').classList.add('is-hidden');
+    root.querySelector(':nth-child(2)').classList.remove('is-hidden');
+  }, 3000)
+</script>
+   
+   <script>
+       function playSound(){
+       var audio = document.getElementById("windows");
+       audio.play();
+                 }
+   </script>
+</body>

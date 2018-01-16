@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TOUCHY FEELY></title>
+    <link rel="stylesheet" href="hands.css">
+    <style>
+        a {
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body onclick="playPause()">
+    <div >
+        <video id="bgvideo" onclick="playPause()">
+            <source src="handson.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <video id="ppl" autoplay loop >
+        <source src="handsppl.mp4" type="video/mp4">
+    </video>
+    
+   <!-- <img src="1.jpeg"class="hand" >-->
+    <img src="handgif.gif" class="hand"id="hand2">
+    
+    
+    
+     <a href="tingel.html">
+        <div id="button">
+       <p>BOOP</p>
+    </div>
+     </a>
+    <script>
+    var myVideo = document.getElementById("bgvideo"); 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+    </script>
+    
+</body>

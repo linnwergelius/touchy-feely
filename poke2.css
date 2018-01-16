@@ -1,0 +1,56 @@
+        body {
+    background-color:#f5bae4;
+
+   margin:0px;
+   
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+video {
+    width:424px;
+    height:auto;
+    position:relative;
+    margin:auto;
+    top:200px;
+    z-index:1;
+  margin-left:20px;
+  margin-right:20px;
+  
+   
+}
+
+p#left {
+ font-family: 'Fredoka One', cursive;
+  font-size:60px;
+  LETTER-SPACING:5PX;
+  text-align:center;
+ color:#fcb5ee;
+ MARGIN-TOP:50px;
+ margin-left:4%;
+ position:absolute;
+ z-index:3;
+}
+
+p#right {
+ font-family: 'Fredoka One', cursive;
+  font-size:60px;
+  LETTER-SPACING:5PX;
+  text-align:center;
+ color:#fcb5ee;
+ MARGIN-TOP:50px;
+ margin-left:83%;
+ position:absolute;
+ z-index:3;
+}
+
+
+
+#blackbox {
+  height:422px;
+  width:100%;
+  position:absolute;
+  background-color:black;
+}

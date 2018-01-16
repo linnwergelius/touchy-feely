@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOUCHY FEELY</title>
+    <link rel="stylesheet" href= "poke2.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+ <link rel="stylesheet"
+  href="animate.css">
+<style>
+
+BODY{
+cursor:url("curos.png"), default;
+}
+
+.background{
+   margin:auto;
+   
+}
+
+</style>
+
+
+</head>
+<body>
+<body>
+     
+<div id="blackbox">
+   
+        <a href="grz2.html"><p id="left" class="animated infinite pulse">CLICK</p></a>
+         <a href="grz2.html"><p id="right" class="animated infinite pulse">CLICK</p></a>
+</div>
+     <div class="background" >
+     <video id="first" onclick="playVid1()">
+      <source src="pokesitemedia/1.mp4" type="video/mp4" >
+     </video>
+      <video id="second" onclick="playVid2()">
+      <source src="pokesitemedia/2.mp4" type="video/mp4"id="second">
+     </video>
+       <video id="third" onclick="playVid3()">
+      <source src="pokesitemedia/3_1.mp4" type="video/mp4" id="third">
+     </video>
+</div>
+    
+     
+<script>
+   
+
+function playVid1() {
+    var vid = document.getElementById("first");
+    vid.play(); 
+} 
+
+function pauseVid() {
+   
+    vid.pause(); 
+}
+
+   
+
+function playVid2() {
+   var vid = document.getElementById("second"); 
+    vid.play(); 
+} 
+
+function pauseVid() {
+   var vid = document.getElementById("second"); 
+    vid.pause(); 
+}
+
+    
+
+function playVid3() {
+   var vid = document.getElementById("third");
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+}
+</script>
+</div>
+    
+</body>
+
+</body>

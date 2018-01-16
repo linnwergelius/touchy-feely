@@ -1,0 +1,128 @@
+html {
+    width:100%;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+   background-color:black;
+   animation-name:fadein;
+    animation-duration:10s;
+    
+    
+    }
+
+
+::-webkit-scrollbar { 
+    display: none;
+    
+}
+
+#back {
+     position:absolute;
+    z-index:-8;
+    width:100%;
+    
+}
+
+
+.bg {
+    z-index:-8;
+    width:100%;
+    margin-top:-5px;
+   
+}
+
+
+#surf {
+    width:50%;
+    margin-top:40px;
+    padding-bottom:550px;
+    margin-left:200px;
+}
+
+
+
+#blixt {
+    display:block;
+    width:auto;
+    height:670px;
+    float:right;
+    padding-right:300px;
+}
+
+#heart{
+    position:relative;
+    top:700px;
+    display:block;
+    height:500px;
+    margin-bottom:800px;
+    margin-top:1px;
+    margin-left:30%;
+}
+
+
+#kissing {
+    position:relative;
+    left:33%;
+    width:919px;
+    height:676px;
+    margin-top:87%;
+    overflow:hidden;
+    margin-bottom:80px;
+    margin-right:0;
+    background-color:magenta;
+    
+}
+.kiss {
+    margin:-2px;
+    height:230px;
+    overflow: hidden;
+}
+
+#gabber {
+      width:70%;
+    margin:300px;
+    margin-top:0px;
+    margin-left:100px;
+}
+
+
+@keyframes fadein{
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+p {
+    font-family:arial;
+    font-size:200px;
+    padding-left:500px;
+    padding-top:200px;
+   position:absolute;
+   text-align:right;
+   
+    
+}
+
+
+
+@keyframes fadey{
+from {opacity:1;}
+to {opacity:0.3;}
+
+
+}
+.kiss:hover {
+    animation-name:fadey;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+
+#text1:hover {
+    text-transform: uppercase;
+}
+
+
+
